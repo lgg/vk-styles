@@ -1,0 +1,26 @@
+@-moz-document domain('vk.com'){
+    body{
+        background: none !important;
+    }
+    /*
+    hide annoying and useless shit
+    */
+
+    #friends_possible_block,
+    #groups_filters_wrap{
+        display: none !important;
+    }
+    .back{
+        border-radius: 0 0 10px 10px !important;
+    }
+    #page_header{
+        margin: 0 !important;
+    }
+    #page_header_wrap,
+    .back{
+        width: 80% !important;
+    }
+    #page_header_cont{
+        left: 10% !important;
+    }
+}
