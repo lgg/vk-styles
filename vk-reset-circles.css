@@ -1,0 +1,34 @@
+/* fix round borders in chats */
+.nim-peer .nim-peer--photo-w, .im_grid>img, .nim-peer--photo>img,
+    /* friends page */
+.friends_photo_img,
+    /* comments */
+.reply_img, .post_field_user_image,
+    /* wall */
+.post_img, .copy_post_img,
+    /* notifications */
+.feedback_sticky_icon,
+.top_notify_cont .feedback_img,
+    /* notification balloon  */
+.left_count_wrap, #side_bar ol li .left_row:hover .left_count_wrap, .font_medium .left_count_wrap, .font_medium #side_bar ol li .left_row:hover .left_count_wrap, .left_count_wrap,
+    /* header your profile image */
+.top_profile_img,
+    /* groups page */
+.group_row_photo, .group_row_img,
+    /* photos page */
+.ow_ava.ow_ava_comm,
+    /* video page */
+.mv_author_photo,
+    /* group page */
+.module_body .people_cell_img, .page_list_module .cell_img, .page_list_module .thumb,
+    /* discussions */
+.bp_img,
+    /* faves */
+.fans_fan_img, .fave_link_thumb,
+    /* fixed chat */
+.chat_tab_img
+{
+    border-radius: 0 !important;
+}
+
+
