@@ -12,4 +12,7 @@
     * backup in `material-vk.css`
 
 * http://userstyles.org/styles/131492
-    * backup in `soft-vk-fixes.css`
+    * backup in `vk-soft-fixes.css`
+
+* https://userstyles.org/styles/131535/vk-remove-circles
+    * backup in `vk-reset-circles.css`
