@@ -1,26 +1,29 @@
 @-moz-document domain('vk.com'){
+    /*remove awful backgroud color*/
     body{
         background: none !important;
     }
-    /*
-    hide annoying and useless shit
-    */
-
-    #friends_possible_block,
-    #groups_filters_wrap{
+    /*hide annoying and useless shit*/
+    #friends_possible_block, #groups_filters_wrap{
         display: none !important;
     }
+    /*make header like in old VK*/
     .back{
         border-radius: 0 0 10px 10px !important;
     }
     #page_header{
         margin: 0 !important;
     }
-    #page_header_wrap,
-    .back{
+    #page_header_wrap, .back{
         width: 80% !important;
     }
     #page_header_cont{
         left: 10% !important;
+    }
+    /*fix colors for notifications balloon*/
+    .left_count_wrap, #side_bar ol li .left_row:hover .left_count_wrap,
+    .font_medium .left_count_wrap, .font_medium #side_bar ol li .left_row:hover .left_count_wrap,
+    .left_count_wrap{
+        background: #6a8fb8 !important;
     }
 }
