@@ -26,4 +26,84 @@
     .left_count_wrap{
         background: #6a8fb8 !important;
     }
+    /* fix style of sidebar menu */
+    #side_bar ol li .left_row:hover{
+        background: inherit;
+        text-decoration: underline;
+    }
+    #side_bar ol li .left_row .left_icon{
+        opacity: 1;
+    }
+    .left_count_wrap, #side_bar ol li .left_row:hover .left_count_wrap, .font_medium .left_count_wrap, .font_medium #side_bar ol li .left_row:hover .left_count_wrap, .left_count_wrap{
+        background: #D4E0F0 !important;
+        color: #526478 !important;
+        border-radius: 5px !important;
+    }
+    /* add normal counter for notifications */
+    .inl_bl .left_count{
+        display: block;
+    }
+    .left_count:before{
+        content: "+";
+    }
+    #side_bar ol li .left_row:hover .left_count_wrap{
+        padding: 4px 6px;
+        margin: 2px 0 2px 2px;
+    }
+    /* mark new messages with color */
+    .nim-dialog_unread-out{
+        background: #f5f7fa;
+    }
+    /* fix header logo */
+    .top_home_link .top_home_logo{
+        margin: 11px auto 0;
+    }
+    /* change color of header icons and search input */
+    input.text.ts_input{
+        background-color: rgba(0, 0, 0, .1);
+    }
+    .top_nav_btn#top_notify_btn .top_nav_btn_icon, .top_nav_btn#top_audio .top_nav_btn_icon{
+        background-color: #507299;
+        -webkit-background-blend-mode: screen;
+        background-blend-mode: screen;
+    }
+    .top_nav_link:hover, .top_nav_btn:hover, .top_nav_link.active, .top_nav_btn.active{
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+    #top_profile_link:after, .top_nav_link:after, .top_nav_btn:after, #top_notify_btn .top_nav_btn_icon:after{
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        left: calc(50% - 5px);
+        top: calc(50% - 5px);
+        background: rgba(0, 0, 0, .1);
+        border-radius: 50%;
+        -moz-transition: all .24s ease-in-out;
+        -webkit-transition: all .24s ease-in-out;
+        transition: all .24s ease-in-out;
+    }
+    #top_profile_link:hover:after, .top_nav_link:hover:after, .top_nav_btn:hover:after, .top_nav_btn.active:after, .top_nav_link.active:after, #top_notify_btn:hover .top_nav_btn_icon:after, #top_notify_btn.active .top_nav_btn_icon:after{
+        width: 10px !important;
+        height: 10px !important;
+        transform: scale(17);
+    }
+    #top_profile_link, .top_nav_link, .top_nav_btn, #top_notify_btn .top_nav_btn_icon{
+        position: relative;
+        overflow: hidden;
+    }
+    #top_notify_btn:hover{
+        background-color: inherit !important;
+    }
+    #top_notify_btn .top_nav_btn_icon:after, #top_notify_btn:after{
+        content: '' !important;
+        position: static;
+    }
+    /* move sidebar and other elements upper to header */
+    .side_bar_inner{
+        padding: 2px 0 10px;
+    }
+    .page_block{
+        margin-top: 0;
+    }
 }
