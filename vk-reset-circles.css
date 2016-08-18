@@ -27,7 +27,13 @@
         /* faves */
     .fans_fan_img, .fave_link_thumb,
         /* fixed chat */
-    .chat_tab_img{
+    img.fc_contact_photo,
+    a.fc_msgs_img,
+    .chat_tab_img,
+        /*blacklist page*/
+    img.settings_bl_photo,
+        /*notification popup*/
+    .notifier_image{
         border-radius: 0 !important;
     }
 }
