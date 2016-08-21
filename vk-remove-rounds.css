@@ -53,7 +53,9 @@
     .ui_ownblock_img,
     /* support page */
     .tu_thumb,
-    .tickets_image__i
+    .tickets_image__i,
+    /* about vk page */
+    .blog_about_link_pic
     {
         border-radius: 0 !important;
     }
