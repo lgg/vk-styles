@@ -4,7 +4,8 @@
   "description": "Some style fixes to make UX more friendly, remove visual garbage and awful colors",
   "main": "index.js",
   "scripts": {
-    "deploy": "gulp build && gulp build-us"
+    "gulp": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
