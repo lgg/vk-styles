@@ -30,7 +30,7 @@ Make all images 'old-style' looked
 * to compile styles - run `gulp build`
 * for "live editing"(get compiled styles while editing) - run `gulp`
 
-## ToDO
+## ToDo
 
 * close @TODO in code
 * fix notifications popup
