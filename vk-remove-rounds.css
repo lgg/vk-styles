@@ -50,7 +50,10 @@
     .group_u_photo_img,
     .group_al_thumb,
     .group_l_photo, .group_l_photo_img,
-    .ui_ownblock_img
+    .ui_ownblock_img,
+    /* support page */
+    .tu_thumb,
+    .tickets_image__i
     {
         border-radius: 0 !important;
     }
