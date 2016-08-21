@@ -17,7 +17,7 @@ Some style fixes to make UX more friendly, remove visual garbage and awful color
 ### VK remove round images
 Make all images 'old-style' looked
 
-* https://userstyles.org/styles/131535/vk-remove-circles
+* https://userstyles.org/styles/131535
     * backup in `dist/vk-reset-circles.us.css`
     * pure styles in `dist/vk-reset-circles.css`
 
