@@ -30,8 +30,11 @@
     img.fc_contact_photo,
     a.fc_msgs_img,
     .chat_tab_img,
-        /*blacklist page*/
+        /*blacklist page and privacy*/
     img.settings_bl_photo,
+    .settings_blb_photo_img,
+    .flist_sel_list .flist_item_thumb,
+    .flist_item_thumb,
         /*mention image*/
     .mention_tt_img,
         /*notification popup*/
@@ -39,7 +42,15 @@
     /*repost popup*/
     .wpost_owner_head_thumb img,
     .like_share_ava.wdd_imgs,
-    .wddi_img
+    .wddi_img,
+    /*app management*/
+    .apps_edit_user_img,
+    .dev_top_profile_link img,
+    /* group management */
+    .group_u_photo_img,
+    .group_al_thumb,
+    .group_l_photo, .group_l_photo_img,
+    .ui_ownblock_img
     {
         border-radius: 0 !important;
     }
