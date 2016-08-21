@@ -1,0 +1,68 @@
+@-moz-document domain('vk.com'){
+    /* fix round borders in chats */
+    .nim-peer .nim-peer--photo-w, .im_grid > img, .nim-peer--photo > img,
+        /* friends page */
+    .friends_photo_img,
+        /* comments */
+    .reply_img, .post_field_user_image,
+        /* wall */
+    .post_img, .copy_post_img,
+        /* notifications */
+    .feedback_sticky_icon,
+    .top_notify_cont .feedback_img,
+        /* notification balloon  */
+    .left_count_wrap, #side_bar ol li .left_row:hover .left_count_wrap, .font_medium .left_count_wrap, .font_medium #side_bar ol li .left_row:hover .left_count_wrap, .left_count_wrap,
+        /* header your profile image */
+    .top_profile_img,
+        /* groups page */
+    .group_row_photo, .group_row_img,
+        /* photos page */
+    .ow_ava.ow_ava_comm,
+        /* video page */
+    .mv_author_photo,
+        /*audio page*/
+    .ow_ava.ow_ava_small,
+        /* group page */
+    .module_body .people_cell_img, .page_list_module .cell_img, .page_list_module .thumb,
+        /* discussions */
+    .bp_img,
+        /* faves */
+    .fans_fan_img, .fave_link_thumb,
+        /* fixed chat */
+    img.fc_contact_photo,
+    a.fc_msgs_img,
+    .chat_tab_img,
+        /*blacklist page and privacy*/
+    img.settings_bl_photo,
+    .settings_blb_photo_img,
+    .flist_sel_list .flist_item_thumb,
+    .flist_item_thumb,
+        /*mention image*/
+    .mention_tt_img,
+        /*notification popup*/
+    .notifier_image,
+        /*repost popup*/
+    .wpost_owner_head_thumb img,
+    .like_share_ava.wdd_imgs,
+    .wddi_img,
+        /*app management*/
+    .apps_edit_user_img,
+    .dev_top_profile_link img,
+        /* group management */
+    .group_u_photo_img,
+    .group_al_thumb,
+    .group_l_photo, .group_l_photo_img,
+    .ui_ownblock_img,
+        /* support page */
+    .tu_thumb,
+    .tickets_image__i,
+        /* about vk page */
+    .blog_about_link_pic,
+        /*like popups*/
+    .like_tt_image, .poll_tt_image,
+        /* common friends */
+    .mention_tt_person_img
+    {
+        border-radius: 0 !important;
+    }
+}
