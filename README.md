@@ -30,6 +30,13 @@ Make all images 'old-style' looked
 * to compile styles - run `gulp build`
 * for "live editing"(get compiled styles while editing) - run `gulp`
 
+## ToDO
+
+* close @TODO in code
+* fix notifications popup
+* optional styles for vk-soft-fixes
+* link to post in the left bottom corner
+
 ## License
 
 * MIT
