@@ -1,10 +1,10 @@
 # Styles for new awful vk version
 
-## You will need:
+## You will need
 
 * https://userstyles.org/
 
-## Styles:
+## Styles
 
 ### VK soft fixes
 
@@ -18,3 +18,17 @@ Make all images 'old-style' looked
 
 * https://userstyles.org/styles/131535/vk-remove-circles
     * backup in `vk-reset-circles.css`
+
+
+## Development
+
+* `git clone https://github.com/lgg/vk-styles`
+* `npm install`
+* edit styles in `sources`
+* to compile styles - run `gulp build`
+* for "live editing"(get compiled styles while editing) - run `gulp`
+
+## License
+
+* MIT
+* [lgg](https://github.com/lgg/), 2016
