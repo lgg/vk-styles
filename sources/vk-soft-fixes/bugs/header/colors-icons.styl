@@ -8,8 +8,8 @@ input.text.ts_input
   -webkit-background-blend-mode screen
   background-blend-mode screen
 
-.top_nav_linkhover
-.top_nav_btnhover
+.top_nav_link:hover
+.top_nav_btn:hover
 .top_nav_link.active
 .top_nav_btn.active
   background-color rgba(0, 0, 0, 0) !important
@@ -30,12 +30,12 @@ input.text.ts_input
   -webkit-transition all .24s ease-in-out
   transition all .24s ease-in-out
 
-#top_profile_linkhover:after
-.top_nav_linkhover:after
-.top_nav_btnhover:after
+#top_profile_link:hover:after
+.top_nav_link:hover:after
+.top_nav_btn:hover:after
 .top_nav_btn.active:after
 .top_nav_link.active:after
-#top_notify_btnhover .top_nav_btn_icon:after
+#top_notify_btn:hover .top_nav_btn_icon:after
 #top_notify_btn.active .top_nav_btn_icon:after
   width 10px !important
   height 10px !important
@@ -48,7 +48,7 @@ input.text.ts_input
   position relative
   overflow hidden
 
-#top_notify_btnhover
+#top_notify_btn:hover
   background-color inherit !important
 
 #top_notify_btn .top_nav_btn_icon:after
