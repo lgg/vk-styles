@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     autoprefixer = require('gulp-autoprefixer'),
     stylus = require('gulp-stylus'),
+    plumber = require('gulp-plumber'),
     cleancss = require('gulp-clean-css');
 
 
@@ -41,71 +42,48 @@ gulp.task('watch', function () {
 });
 
 
+/* -------------------- Stylus func */
+
+function compileStylus(src, filename, dest) {
+    gulp.src(src)
+        .pipe(plumber())
+        .pipe(stylus())
+        .pipe(autoprefixer({
+            browsers: browsers_ver,
+            cascade: false
+        }))
+        .pipe(concat(filename))
+        .pipe(gulp.dest(dest));
+}
+
+function buildStylus(src, filename, dest) {
+    gulp.src(src)
+        .pipe(plumber())
+        .pipe(stylus())
+        .pipe(autoprefixer({
+            browsers: browsers_ver,
+            cascade: false
+        }))
+        .pipe(concat(filename))
+        .pipe(cleancss({}))
+        .pipe(gulp.dest(dest));
+}
 
 /* -------------------- Stylus */
 //Reload
 gulp.task('reloadStylus', function () {
-    gulp.src(src_soft)
-        .pipe(stylus())
-        .pipe(autoprefixer({
-            browsers: browsers_ver,
-            cascade: false
-        }))
-        .pipe(concat("vk-soft-fixes.css"))
-        .pipe(gulp.dest(DEST));
-
-    gulp.src(src_rounds)
-        .pipe(stylus())
-        .pipe(autoprefixer({
-            browsers: browsers_ver,
-            cascade: false
-        }))
-        .pipe(concat("vk-remove-rounds.css"))
-        .pipe(gulp.dest(DEST));
+    compileStylus(src_soft, "vk-soft-fixes.css", DEST);
+    compileStylus(src_rounds, "vk-remove-rounds.css", DEST);
 });
 
 //Build
 gulp.task('buildStylus', function () {
-    gulp.src(src_soft)
-        .pipe(stylus())
-        .pipe(autoprefixer({
-            browsers: browsers_ver,
-            cascade: false
-        }))
-        .pipe(concat("vk-soft-fixes.css"))
-        .pipe(cleancss({}))
-        .pipe(gulp.dest(DEST));
-
-    gulp.src(src_rounds)
-        .pipe(stylus())
-        .pipe(autoprefixer({
-            browsers: browsers_ver,
-            cascade: false
-        }))
-        .pipe(concat("vk-remove-rounds.css"))
-        .pipe(cleancss({}))
-        .pipe(gulp.dest(DEST));
+    buildStylus(src_soft, "vk-soft-fixes.css", DEST);
+    buildStylus(src_rounds, "vk-remove-rounds.css", DEST);
 });
 
 //Build
 gulp.task('buildStylusForUserstyles', function () {
-    gulp.src(src_soft_us)
-        .pipe(stylus())
-        .pipe(autoprefixer({
-            browsers: browsers_ver,
-            cascade: false
-        }))
-        .pipe(concat("vk-soft-fixes.us.css"))
-        .pipe(cleancss({}))
-        .pipe(gulp.dest(DEST));
-
-    gulp.src(src_rounds_us)
-        .pipe(stylus())
-        .pipe(autoprefixer({
-            browsers: browsers_ver,
-            cascade: false
-        }))
-        .pipe(concat("vk-remove-rounds.us.css"))
-        .pipe(cleancss({}))
-        .pipe(gulp.dest(DEST));
+    buildStylus(src_soft_us, "vk-soft-fixes.us.css", DEST);
+    buildStylus(src_rounds_us, "vk-remove-rounds.us.css", DEST);
 });
