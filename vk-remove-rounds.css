@@ -59,7 +59,10 @@
         /* about vk page */
     .blog_about_link_pic,
         /*like popups*/
-    .like_tt_image, .poll_tt_image{
+    .like_tt_image, .poll_tt_image,
+        /* common friends */
+    .mention_tt_person_img
+    {
         border-radius: 0 !important;
     }
 }
