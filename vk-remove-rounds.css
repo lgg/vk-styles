@@ -55,7 +55,9 @@
     .tu_thumb,
     .tickets_image__i,
     /* about vk page */
-    .blog_about_link_pic
+    .blog_about_link_pic,
+    /*like popups*/
+    .like_tt_image, .poll_tt_image
     {
         border-radius: 0 !important;
     }
