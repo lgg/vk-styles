@@ -4,7 +4,7 @@
         background: none !important;
     }
     /*hide annoying and useless shit*/
-    #friends_possible_block, #groups_filters_wrap, #feed_recommends{
+    #friends_possible_block, #groups_filters_wrap, #feed_recommends, #ads_left{
         display: none !important;
     }
     /*make header like in old VK*/
