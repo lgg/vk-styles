@@ -1,0 +1,57 @@
+//change color of header icons and search input
+input.text.ts_input
+  background-color rgba(0, 0, 0, .1)
+
+.top_nav_btn#top_notify_btn .top_nav_btn_icon
+.top_nav_btn#top_audio .top_nav_btn_icon
+  background-color #507299
+  -webkit-background-blend-mode screen
+  background-blend-mode screen
+
+.top_nav_linkhover
+.top_nav_btnhover
+.top_nav_link.active
+.top_nav_btn.active
+  background-color rgba(0, 0, 0, 0) !important
+
+#top_profile_linkafter
+.top_nav_linkafter
+.top_nav_btnafter
+#top_notify_btn .top_nav_btn_iconafter
+  position absolute
+  content ''
+  width 0
+  height 0
+  left calc(50% - 5px)
+  top calc(50% - 5px)
+  background rgba(0, 0, 0, .1)
+  border-radius 50%
+  -moz-transition all .24s ease-in-out
+  -webkit-transition all .24s ease-in-out
+  transition all .24s ease-in-out
+
+#top_profile_linkhoverafter
+.top_nav_linkhoverafter
+.top_nav_btnhoverafter
+.top_nav_btn.activeafter
+.top_nav_link.activeafter
+#top_notify_btnhover .top_nav_btn_iconafter
+#top_notify_btn.active .top_nav_btn_iconafter
+  width 10px !important
+  height 10px !important
+  transform scale(17)
+
+#top_profile_link
+.top_nav_link
+.top_nav_btn
+#top_notify_btn .top_nav_btn_icon
+  position relative
+  overflow hidden
+
+#top_notify_btnhover
+  background-color inherit !important
+
+#top_notify_btn .top_nav_btn_iconafter
+#top_notify_btnafter
+  content '' !important
+  position static
