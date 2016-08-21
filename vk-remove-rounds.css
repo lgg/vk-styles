@@ -20,6 +20,8 @@
     .ow_ava.ow_ava_comm,
         /* video page */
     .mv_author_photo,
+        /*audio page*/
+    .ow_ava.ow_ava_small,
         /* group page */
     .module_body .people_cell_img, .page_list_module .cell_img, .page_list_module .thumb,
         /* discussions */
@@ -39,26 +41,25 @@
     .mention_tt_img,
         /*notification popup*/
     .notifier_image,
-    /*repost popup*/
+        /*repost popup*/
     .wpost_owner_head_thumb img,
     .like_share_ava.wdd_imgs,
     .wddi_img,
-    /*app management*/
+        /*app management*/
     .apps_edit_user_img,
     .dev_top_profile_link img,
-    /* group management */
+        /* group management */
     .group_u_photo_img,
     .group_al_thumb,
     .group_l_photo, .group_l_photo_img,
     .ui_ownblock_img,
-    /* support page */
+        /* support page */
     .tu_thumb,
     .tickets_image__i,
-    /* about vk page */
+        /* about vk page */
     .blog_about_link_pic,
-    /*like popups*/
-    .like_tt_image, .poll_tt_image
-    {
+        /*like popups*/
+    .like_tt_image, .poll_tt_image{
         border-radius: 0 !important;
     }
 }
