@@ -1,13 +1,23 @@
 //make header like in old VK
+//add border radius
 #page_layout .back
   border-radius 0 0 10px 10px !important
+
+//change width
+#page_header
+  width auto !important
 
 #page_layout #page_header
   margin 0 !important
 
 #page_layout #page_header_wrap
 #page_layout .back
-  width 80% !important
+  @media screen and (max-width 1350px)
+    width 100% !important
+  @media screen and (min-width 1350px)
+    width 80% !important
+    max-width 1080px
 
 #page_layout #page_header_cont
-  left 10% !important
+  @media screen and (min-width 1350px)
+    left calc((100% - 1080px) / 2) !important
