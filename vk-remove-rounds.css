@@ -32,8 +32,15 @@
     .chat_tab_img,
         /*blacklist page*/
     img.settings_bl_photo,
+        /*mention image*/
+    .mention_tt_img,
         /*notification popup*/
-    .notifier_image{
+    .notifier_image,
+    /*repost popup*/
+    .wpost_owner_head_thumb img,
+    .like_share_ava.wdd_imgs,
+    .wddi_img
+    {
         border-radius: 0 !important;
     }
 }
