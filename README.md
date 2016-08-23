@@ -33,7 +33,6 @@ Make all images 'old-style' looked
 ## ToDo
 
 * close @TODO in code
-* fix notifications popup
 * optional styles for vk-soft-fixes
 * link to post in the left bottom corner
 
